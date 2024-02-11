@@ -1,0 +1,115 @@
+body{
+    background-color:rgb(251, 251, 225);
+}
+
+h1{
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.multicolorText{
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+img{
+    width: 250px;
+    height: 200px;
+    border: blueviolet solid 5px;
+    box-shadow: yellow 5px 5px 10px 10px;
+    padding: 10px;
+    border-radius: 10%;
+    margin-top: 5%;
+}
+
+.photos{
+    display:flex;
+    justify-content: space-between;
+    width: 900px;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+img:hover{
+    width: 300px;
+    height: 250px;
+    margin-top: 2.5%;
+}
+
+p{
+    margin: 80px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+table{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+    text-align: center;
+    border-bottom: solid green 5px;
+    border-collapse: collapse;
+    border: outset 5px #F2F3F4;
+    border-bottom: green solid 3px;
+}
+
+th{
+    background-color: green;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgb(221, 221, 221);
+    border-bottom: solid 1px grey;
+    border-top: solid 1px grey;
+}
+    
+tr:hover{
+    color: green;
+    background-color: white;
+    font-size: larger;
+}
+
+#radius{
+    border-top-left-radius: 20%;
+}
+
+#radius2{
+    border-top-right-radius: 20%;
+}
+
+#evaluate{
+    width: 100px;
+    height: 20px;
+}
+
+#evaluate:hover{
+    background-color: blue;
+}
+
+#evaluate:focus{
+    background-color: yellow;
+}
+
+#submit:hover{
+    background-color: pink;
+}
+
+#submit:active{
+    background-color: red;
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+

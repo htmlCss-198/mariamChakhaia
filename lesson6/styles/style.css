@@ -1,0 +1,106 @@
+body{
+    width: 960px;
+    margin-left: 200px;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(/lesson6/fonts/Roboto-Regular.ttf);
+}
+
+#header{
+    width: 960px;
+    height: 90px;
+}
+
+header p{
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 5px;
+    font-size: 24px;
+    line-height: 28.13px;
+    margin-top: 40px;
+    font-family: "roboto";
+}
+
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 155px;
+    margin-right: 125px;
+    
+}
+
+h1{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75px;
+    width: 340px;
+    margin-top: 70px;
+    margin-left: 310px;
+    font-family: "roboto";
+}
+
+main p{
+    width: 845px;
+    text-align: justify;
+    height: 225px;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 55px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.13px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    padding: 15px;
+    font-family: "roboto";
+    margin-bottom: 35px;
+}
+
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 120px;
+    margin-left: 120px; 
+    height: 150px;
+}
+
+#input1{
+    width:100%;
+    border-left: solid 16px;
+    border-right: solid 16px;
+    border-top: solid 16px;
+    border-bottom: solid 8px;;
+    height: 64px;
+}
+#input2{
+    width:100%;
+    border-left: solid 16px;
+    border-right: solid 16px;
+    border-top: solid 8px;
+    border-bottom: solid 16px;
+    height: 64px;
+}
+
+
+::placeholder{
+    font-style: normal;
+    color: black;
+    font-size: 24px;
+    height: 30px;
+    font-family: "roboto";
+    margin-left: 25px;
+}
+
+#input1{
+    margin-top: 50px;
+}
+
+#mainText:hover{
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
