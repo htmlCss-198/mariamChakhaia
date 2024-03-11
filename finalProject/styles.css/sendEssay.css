@@ -1,0 +1,338 @@
+:root{
+    --mainColor: #65E8FF;
+    --mainColorOpacity: #65E8FF90;
+    --backgroundColor: #4b63fe;
+    --backgroundColor2: #0d05fc;
+    --secondColor: #FFFF00;  
+    --fontColor: white;
+    --headingFont: "mtavari";
+    --mainFont: "glaho";
+    --capFont: "aladdin";
+    --capSize: 50px;
+    --fontSize: 20px;
+    --navSize: 20px;
+    --capLetSpace: 1.5;
+    --padding1: 30px 5px 5px 30px;
+    --padding2: 1%;
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --padding-left: 10px;
+    --padding-right: 5px;
+    --padding-top2: 20px;
+    --padding-bottom2: 20px;
+    --padding-left2: 10px;
+    --padding-right2: 22px;
+    --padding3: 5px;
+    --padding4: 100px;
+    --shadow: 0px 0px 5px 5px;
+    --text-indent: 50px;
+    --capSizeMobile: 12px;
+}
+
+@font-face {
+    font-family: "mtavari";
+    src: url(/finalProject/fonts/mtavruli.ttf);
+}
+
+@font-face {
+    font-family: "glaho";
+    src: url(/finalProject/fonts/glaho.ttf);
+}
+
+@font-face {
+    font-family: "aladdin";
+    src: url(/finalProject/fonts/aladdin.ttf);
+}
+
+body{
+    background-color: var(--mainColor);
+    background-image: linear-gradient(var(--backgroundColor2), var(--mainColor));
+    margin: 0;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: var(--fontColor);
+    font-family: var(--headingFont);
+    font-size: var(--navSize);
+    width: 100%;
+    text-align: center;
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+
+.navBar a:hover, .grammar:hover{
+    color: var(--secondColor);
+}
+
+
+.navBar{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+    height: 10%;
+    margin-top: 0;
+    border: none;
+}
+
+.grammar{
+    text-decoration: none;
+    color: var(--fontColor);
+    font-family: var(--headingFont);
+    font-size: var(--navSize);
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    border: none;
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.subGrammar {
+    position: absolute;
+    background-color: var(--mainColor);
+    display: none;
+    padding-right: var(--padding-right2);
+    padding-top: var(--padding-top2);
+    padding-bottom: var(--padding-bottom2);
+    width: 14.15%;
+    z-index: 1;
+    background-color: var(--mainColor);
+}
+
+.subGrammar a{
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.subGrammar a:hover {color: var(--secondColor);}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    display: block;
+  }
+
+.dropdown:hover  .subGrammar {
+    display: block;
+    background-color: var(--mainColor)
+}
+
+.dropdown2:hover  .subGrammar {
+    display: block;
+    background-color: var(--mainColor)
+}
+
+#image1{
+    opacity: 1;
+    width: 100%;
+    height: 50%;
+    animation: imageEnter 2s 1;
+}
+
+@keyframes imageEnter {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+main h3{
+    font-family: var(--headingFont);
+    color: var(--fontColor);
+    position: relative;
+    left: 10%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+form label{
+    font-family: var(--headingFont);
+    color: var(--fontColor);
+}
+
+form input{
+    width: 20%;
+    height: 4%;
+    font-size: var(--fontSize);
+    font-family: var(--mainFont);
+}
+
+#literature{
+    width: 90%;
+    height: 10%;
+    color: #00000060;
+    font-size: var(--fontSize);
+    font-family: var(--mainFont);
+}
+
+#essay{
+    width: 90%;
+    height: 80%;
+    text-indent: var(--text-indent);
+    color: #00000060;
+    font-size: var(--fontSize);
+    font-family: var(--mainFont);
+}
+
+form button{
+    background-color: var(--backgroundColor2);
+    width: 20%;
+    height: 5%;
+    color: var(--fontColor);
+    font-family: var(--headingFont);
+    font-size: var(--fontSize);
+    border: none;
+}
+
+form button:active{
+    box-shadow: var(--shadow);
+    transform: translateY(5px);
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.lower{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: solid 1px var(--fontColor); 
+    margin-bottom: 0; 
+}
+
+footer{
+    background: linear-gradient(to right, var(--backgroundColor2), var(--mainColor));
+}
+
+
+@media only screen and (max-width: 580px){
+    .navBar a{
+        text-decoration: none;
+        color: var(--fontColor);
+        font-family: var(--headingFont);
+        font-size: var(--capSizeMobile);
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navBar{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        height: 20%;
+        margin-top: 0;
+    }
+    
+    .grammar{
+        text-decoration: none;
+        color: var(--fontColor);
+        font-family: var(--headingFont);
+        font-size: var(--capSizeMobile);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .subGrammar {
+        width: 30%;
+    }
+    
+    #literature{
+        font-size: 10px;
+    }
+    
+    #essay{
+        font-size: 10px;
+    }
+    
+    form button{
+        width: 40%;
+        height: 5%;
+        font-size: var(--capSizeMobile);
+    }
+
+    form input{
+        width: 50%;
+        height: 4%;
+    }
+    
+    .logos img{
+        height: 12px;
+        width: 12px;
+    }
+
+    .lower span{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 581px) and (max-width: 1159px){
+    .navBar a{
+        font-size: var(--capSizeTab);
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navBar{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        height: 20%;
+        margin-top: 0;
+    }
+    
+    .grammar{
+        font-size: var(--capSizeTab);
+    }
+
+    .subGrammar {
+        width: 30%;
+    }
+
+    #literature, #essay{
+        font-size: var(--capSizeTab);
+        width: 100%;
+    }
+    
+    form button{
+        width: 40%;
+        height: 5%;
+        font-size: var(--capSizeTab);
+    }
+
+    form input{
+        width: 50%;
+        height: 4%;
+    }
+    
+
+    .logos img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .lower span{
+        font-size: var(--capSizeTab);
+    }
+}
